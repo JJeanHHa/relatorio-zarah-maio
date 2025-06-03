@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Campanhas Meta Ads - Maio 2025</title>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #343a40;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            /* display: flex; Removed as buttons are gone */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #495057;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            /* display: flex; Removed as buttons are gone */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #f8f9fa;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 5px solid #17a2b8;
+            font-size: 0.95em;
+        }
+        ul li ul li {
+            margin-top: 8px;
+            background-color: #e9ecef;
+            border-left-color: #28a745;
+        }
+        strong {
+            color: #0056b3;
+        }
+        .note {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 8px;
+            padding: 10px;
+            background-color: #eef0f2;
+            border-radius: 6px;
+            border-left: 3px solid #ffc107;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ced4da;
+            margin: 30px 0;
+        }
+        /* Removed .gemini-button, .modal, .modal-content, .close-button, .loading-spinner, .modal-header, .modal-body, .button-container styles as they are no longer needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Desempenho das Campanhas Meta Ads – Maio 2025</h1>
+        <p style="text-align: center; font-weight: bold;"><strong>Período:</strong> 1 de maio de 2025 a 31 de maio de 2025</p>
+
+        <hr>
+
+        <h2>
+            Resumo Geral das Campanhas Ativas
+        </h2>
+        <ul>
+            <li><strong>Valor Total Investido (Todas as Campanhas):</strong> <span id="valorTotalInvestido">R$ 2.127,14</span></li>
+            <li><strong>Alcance Total:</strong> <span id="alcanceTotal">81.549</span></li>
+            <li><strong>Impressões Totais:</strong> <span id="impressoesTotais">280.093</span></li>
+        </ul>
+
+        <hr>
+
+        <h2>
+            1. Campanhas de Revenda
+        </h2>
+        <p>O objetivo principal destas campanhas foi a captação de leads para novas revendedoras.</p>
+        <ul>
+            <li><strong>Valor Total Investido (Revenda):</strong> <span id="valorInvestidoRevenda">R$ 1.566,30</span> <br>(R$ 617,63 na campanha WhatsApp + R$ 948,67 na campanha Landing Page)</li>
+            <li><strong>Total de Leads Capturados (Revenda):</strong> <span id="leadsRevenda">222</span>
+                <ul>
+                    <li>Leads via WhatsApp: 179</li>
+                    <li>Leads via Landing Page: 43</li>
+                </ul>
+            </li>
+            <li><strong>Custo por Lead Médio (Revenda):</strong> <span id="cplRevenda">R$ 7,06</span> (R$ 1.566,30 / 222)</li>
+            <li><strong>Total de Conversões (Novas Revendedoras):</strong> <span id="conversoesRevenda">22</span></li>
+            <li><strong>Custo por Conversão (Nova Revendedora):</strong> <span id="cpcRevenda">R$ 71,20</span> (R$ 1.566,30 / 22)</li>
+        </ul>
+
+        <h3>
+            1.1. Campanha de Revenda – Leads WhatsApp (<code>wp - conv - revenda - ddos - inter - 27/01/25</code>)
+        </h3>
+        <ul>
+            <li><strong>Valor Investido:</strong> <span id="valorInvestidoRevendaWpp">R$ 617,63</span></li>
+            <li><strong>Alcance:</strong> <span id="alcanceRevendaWpp">21.817</span></li>
+            <li><strong>Impressões:</strong> <span id="impressoesRevendaWpp">69.316</span></li>
+            <li><strong>Cliques no Link:</strong> <span id="cliquesRevendaWpp">368</span></li>
+            <li><strong>Conversas Iniciadas (Leads via WhatsApp):</strong> <span id="conversasRevendaWpp">179</span></li>
+            <li><strong>Custo por Resultado (Conversa/Lead):</strong> <span id="cprRevendaWpp">R$ 3,45</span></li>
+        </ul>
+
+        <h3>
+            1.2. Campanha de Revenda – Leads Landing Page (<code>lead-lp-revenda-ddos-22/04</code>)
+        </h3>
+        <ul>
+            <li><strong>Valor Investido:</strong> <span id="valorInvestidoRevendaLp">R$ 948,67</span></li>
+            <li><strong>Alcance:</strong> <span id="alcanceRevendaLp">24.260</span></li>
+            <li><strong>Impressões:</strong> <span id="impressoesRevendaLp">104.797</span></li>
+            <li><strong>Cliques no Link:</strong> <span id="cliquesRevendaLp">529</span></li>
+            <li><strong>Cadastros Concluídos (Leads via Landing Page):</strong> <span id="cadastrosRevendaLp">43</span> (conforme informação complementar)</li>
+            <li><strong>Custo por Cadastro (Lead via LP):</strong> <span id="cpcadRevendaLp">R$ 22,06</span> (R$ 948,67 / 43)</li>
+            <li><strong>Connect Rate:</strong> <span id="connectRateRevendaLp">51,63%</span> (dado da plataforma)</li>
+            <li><strong>% Gancho:</strong> <span id="ganchoRevendaLp">2,01%</span> (dado da plataforma)</li>
+            <li class="note">*Nota: A imagem da plataforma exibia 'Cadastro Concluído: 36'. O cálculo de Custo por Cadastro (R$ 22,06) utiliza o total de 43 leads fornecido para esta campanha.</li>
+        </ul>
+
+        <hr>
+
+        <h2>
+            2. Campanha de Varejo – Vendas WhatsApp (<code>[ENG][VAREJO] [WHP] 11/01/2025</code>)
+        </h2>
+        <p>O objetivo principal desta campanha foi gerar vendas de produtos através de conversas no WhatsApp.</p>
+        <ul>
+            <li><strong>Valor Investido:</strong> <span id="valorInvestidoVarejo">R$ 560,84</span></li>
+            <li><strong>Alcance:</strong> <span id="alcanceVarejo">35.472</span></li>
+            <li><strong>Impressões:</strong> <span id="impressoesVarejo">105.980</span></li>
+            <li><strong>Cliques no Link:</strong> <span id="cliquesVarejo">694</span></li>
+            <li><strong>Conversas Iniciadas (via Anúncio):</strong> <span id="conversasVarejo">414</span></li>
+            <li><strong>Custo por Conversa Iniciada (via Anúncio):</strong> <span id="cpcVarejo">R$ 1,35</span></li>
+            <li><strong>Total de Vendas:</strong> <span id="vendasVarejo">44</span> (sendo 17 diretamente via anúncios Meta Ads e 27 de outras fontes, como Link da Bio)</li>
+            <li><strong>Receita Total Gerada (incluindo leads do Link da Bio):</strong> <span id="receitaVarejo">R$ 8.734,00</span></li>
+            <li class="note">*Nota: Para calcular o ROAS (Retorno Sobre o Investimento em Publicidade) específico dos anúncios do Meta Ads, seria necessário saber a receita gerada apenas pelas 17 vendas diretas dos anúncios. Se essa informação estiver disponível, o ROAS seria: (Receita das 17 vendas / R$ 560,84).</li>
+        </ul>
+        <!-- Removed button container and Gemini analysis button -->
+    </div>
+
+    <!-- Removed Modal for Gemini Analysis -->
+    <!-- Removed JavaScript block for Gemini API calls and modal interactions -->
+</body>
+</html>
